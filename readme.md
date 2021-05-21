@@ -1,11 +1,9 @@
-# 全局设置name和email
+## 全局设置name和email
 
 ```git
 git config --global user.name "name"
 git config --global user.email "eamail"
 ```
-
-# 创建版本库
 
 ## 创建空目录
 
@@ -31,7 +29,7 @@ git add first.txt second.txt
 
 ## 将文件提交到仓库
 
-```
+```git
 git commit -m "新增readme.md文件"
 ```
 
@@ -88,7 +86,17 @@ git restore --staged readme.md
 
 ##  将工作区文件恢复到最新一次提交
 
-```
+```git
 git restore readme.md
+git chekcout -- readme.md
 ```
+
+## 从版本库中删除文件
+
+```git
+git rm text.txt
+git commit -m "删除text.txt"
+```
+
+
 
