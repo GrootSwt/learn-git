@@ -41,10 +41,15 @@ git commit -m "新增readme.md文件"
 git status
 ```
 
-##  查看当前仓库的文件与上一次已经提交的文件的不同
+##  git diff作用
 
 ```git
+// 查看工作区和缓存区文件不同
 git diff readme.md
+// 查看缓存区和仓库文件不同
+git diff --cached
+// 查看工作区和仓库文件不同
+git diff HEAD -- readme.md
 ```
 
 ## 查看git提交历史
