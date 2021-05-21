@@ -86,3 +86,9 @@ git reflog
 git restore --staged readme.md
 ```
 
+##  将工作区文件恢复到最新一次提交
+
+```
+git restore readme.md
+```
+
