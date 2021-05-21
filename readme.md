@@ -56,3 +56,28 @@ git log
 git log --pretty=online
 ```
 
+## 版本回退和版本移动
+
+```git
+// 版本回退上一个版本
+git reset --hard HEAD^
+// 版本回退上上版本
+git reset --hard HEAD^^
+// 版本回退上一百个版本
+git reset --hard HEAD~100
+// 版本移动（最后为版本号）
+git reseet --hard 0b5e04a
+```
+
+## 查看每一次版本指向历史记录
+
+```git
+git reflog
+```
+
+## 从暂存区将文件删除（取消git add操作）
+
+```git
+git restore --staged readme.md
+```
+
