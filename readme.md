@@ -138,10 +138,14 @@ git clone git@github.com:GrootSwt/learn-git.git
 ```git
 // 创建dev分支并切换到dev分支
 git checkout -b dev
+// 新创建并切换分支命令
+git switch -c dev
 // 创建分支
 git branch dev
 // 切换分支
 git checkout dev
+// 新切换分支
+git switch dev
 ```
 
 ## 查看分支
@@ -155,5 +159,11 @@ git branch
 ```git
 // 指定分支合并到当前分支
 git merge dev
+```
+
+## 删除分支
+
+```git
+git branch -d dev
 ```
 
