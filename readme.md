@@ -126,3 +126,34 @@ git remote -v
 // 取消与远程库的关联（根据别名取消关联）
 git remote rm origin
 ```
+
+## 从远程库克隆
+
+```git
+git clone git@github.com:GrootSwt/learn-git.git
+```
+
+## 创建分支
+
+```git
+// 创建dev分支并切换到dev分支
+git checkout -b dev
+// 创建分支
+git branch dev
+// 切换分支
+git checkout dev
+```
+
+## 查看分支
+
+```
+git branch
+```
+
+## 分支合并
+
+```git
+// 指定分支合并到当前分支
+git merge dev
+```
+
