@@ -84,7 +84,7 @@ git reflog
 git restore --staged readme.md
 ```
 
-##  将工作区文件恢复到最新一次提交
+##  将工作区文件恢复到最新一次提交（也可以用于误删除恢复操作）
 
 ```git
 git restore readme.md
@@ -98,5 +98,31 @@ git rm text.txt
 git commit -m "删除text.txt"
 ```
 
+## 创建SSH-key
 
+```git
+ssh-keygen -t rsa -C "396518038@qq.com"
+```
 
+## 本地仓库关联远程仓库
+
+```git
+// origin是远程库的别名
+git remote add origin git@github.com:GrootSwt/learn-git.git
+```
+
+## 本地库推送远程库
+
+```git
+// 本地库和远程库连接后，第一次推送需要加 -u，以后不需要加
+git push -u origin master
+```
+
+## 取消与远程库的关联
+
+```git
+// 查看关联的远程库
+git remote -v
+// 取消与远程库的关联（根据别名取消关联）
+git remote rm origin
+```
