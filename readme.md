@@ -20,5 +20,20 @@ cd learn-git
 git init
 ```
 
+## 将文件添加到仓库
+
+```git
+// 一次添加一个文件
+git add readme.md
+// 一次添加多个文件
+git add first.txt second.txt
+```
+
+## 将文件提交到仓库
+
+```
+git commit -m "新增readme.md文件"
+```
+
 
 
